@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Task-8</string>
+    <string name="internetfailmessage">No inernet connection found.
+        check it or try again later. </string>
+    <string name="internetfailurestatus">Oopsss!</string>
+    <string name="internetsuccessstatus">connected!</string>
+    <string name="internetsuccessmessage">inernet connection found.</string>
+
+</resources>
