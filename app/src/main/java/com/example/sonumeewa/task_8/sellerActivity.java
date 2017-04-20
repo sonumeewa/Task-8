@@ -12,7 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class sellerActivity extends AppCompatActivity {
-     private String internetfailmessage="No inernet connection found"+"/n"+"check it or try again later.";
+     private String internetfailmessage="No inernet connection found"+"\n"+"check it or try again later.";
     private String internetfailurestatus="Oopsss!";
     private String internetsuccessstatus="connected";
     private String internetsuccessmessage="inernet connection found.";
