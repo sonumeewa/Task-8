@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class sellerActivity extends AppCompatActivity {
      private String internetfailmessage="No inernet connection found"+"/n"+"check it or try again later.";
@@ -68,8 +69,10 @@ public class sellerActivity extends AppCompatActivity {
 
             case R.id.chat:
                 //do nothing for now.
+                Toast.makeText(this,"Chat Clicked", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.profile:
+                Toast.makeText(this,"Profile Clicked", Toast.LENGTH_SHORT).show();
                 return super.onOptionsItemSelected(item);
         }
         return true;

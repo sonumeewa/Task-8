@@ -19,15 +19,16 @@
 </ListView>
 
     <android.support.design.widget.FloatingActionButton
-        layout_width="wrap_content"
-        layout_height="wrap_content"
 
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_gravity="right|bottom"
         android:src="@drawable/ic_edit_white_24dp"
+        android:id="@+id/fab"
         app:backgroundTint="#FFC107"
-        android:layout_height="50dp"
-        android:layout_width="50dp"
+        android:layout_height="72dp"
+        android:layout_width="72dp"
+        android:clickable="true"
+        android:onClick="FabClicked"
         android:layout_margin="25dp"
         />
     </android.support.design.widget.CoordinatorLayout>

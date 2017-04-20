@@ -1,6 +1,7 @@
 package com.example.sonumeewa.task_8;
 
 import android.support.design.widget.BottomSheetDialogFragment;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -19,6 +21,13 @@ public class buyerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buyer);
+        FloatingActionButton fab=(FloatingActionButton)findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"FAB Clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
 
@@ -70,9 +79,12 @@ public class buyerActivity extends AppCompatActivity {
 
             case R.id.chat:
                 //do nothing for now.
+                Toast.makeText(this,"Chat Clicked", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.profile:
+                Toast.makeText(this,"Profile Clicked", Toast.LENGTH_SHORT).show();
                 return super.onOptionsItemSelected(item);
+
             case R.id.home:
                 NavUtils.navigateUpFromSameTask(this);
                 return true;
