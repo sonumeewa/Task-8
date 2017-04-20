@@ -28,7 +28,6 @@
         android:layout_height="72dp"
         android:layout_width="72dp"
         android:clickable="true"
-        android:onClick="FabClicked"
         android:layout_margin="25dp"
         />
     </android.support.design.widget.CoordinatorLayout>
